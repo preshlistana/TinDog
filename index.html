@@ -4,7 +4,27 @@
 <head>
   <meta charset="utf-8">
   <title>TinDog</title>
+  <!-- Fonts & Icons-->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,900&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
 </head>
 
 <body>
@@ -12,21 +32,47 @@
   <section id="title">
 
     <!-- Nav Bar -->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#" id="landing__brand">tindog</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar_collapse">
+          <span class="navbar-toggler-icon mr-auto"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar_collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="#pricing_collapse">Pricing</a>
+              <div class="dropdown-menu" aria-labelledby="pricing_collapse">
+                <a class="nav-link dropdown-item" id="dropdown-item-color" href="#">Customer</a>
+                <a class="nav-link dropdown-item" id="dropdown-item-color" href="#">Business</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Download</a>
+            </li>
+          </ul>
+        </div>
 
+      </nav>
 
+      <!-- Title -->
 
-
-    <!-- Title -->
-
-    <div>
-      <h1>Meet new and interesting dogs nearby.</h1>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+      <div class="row" id="landing__title-row">
+        <div class="col-lg-6">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg" id="landing__download-btn"><i
+              class="fab fa-apple"></i>Download</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg" id="landing__download-btn"><i
+              class="fab fa-google-play"></i>Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img src="images/iphone6.png" id="landing__dog" alt="iphone-mockup">
+        </div>
+      </div>
     </div>
-    <div>
-      <img src="images/iphone6.png" alt="iphone-mockup">
-    </div>
-
   </section>
 
 
@@ -34,41 +80,51 @@
 
   <section id="features">
 
-    <h3>Easy to use.</h3>
-    <p>So easy to use, even your dog could do it.</p>
-
-    <h3>Elite Clientele</h3>
-    <p>We have all the dogs, the greatest dogs.</p>
-
-    <h3>Guaranteed to work.</h3>
-    <p>Find the love of your dog's life or your money back.</p>
-
+    <div class="container">
+      <div class="row" id="features__row">
+        <div class="col-lg-4" id="features__easy">
+          <i class="fas fa-check"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="col-lg-4" id="features__elite">
+          <i class="fas fa-bullseye"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="col-lg-4" id="features__guaranteed">
+          <i class="fas fa-heart"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
 
   <!-- Testimonials -->
 
   <section id="testimonials">
+    <div class="container" id="testimonials__container">
+      <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+      <img src="images/dog-img.jpg" class="testimonials__img" alt="dog-profile">
+      <em>Pebbles, New York</em>
 
-    <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
-    <img src="images/dog-img.jpg" alt="dog-profile">
-    <em>Pebbles, New York</em>
-
-    <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+      <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
     <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
     <em>Beverly, Illinois</em> -->
-
+    </div>
   </section>
 
 
   <!-- Press -->
-
   <section id="press">
-    <img src="images/techcrunch.png" alt="tc-logo">
-    <img src="images/tnw.png" alt="tnw-logo">
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
-    <img src="images/mashable.png" alt="mashable-logo">
-
+    <div class="container" id="press__container">
+      <img src="images/techcrunch.png" class="press__logo" alt="tc-logo">
+      <img src="images/tnw.png" class="press__logo" alt="tnw-logo">
+      <img src="images/bizinsider.png" class="press__logo" alt="biz-insider-logo">
+      <img src="images/mashable.png" class="press__logo" alt="mashable-logo">
+    </div>
   </section>
 
 

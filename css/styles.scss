@@ -1,0 +1,171 @@
+// COLOR SETS
+
+$primary:#ff4c68;
+$secondary:#ef8172;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat-Black";
+    font-weight: bolder;
+}
+
+h1 {
+    color: white;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2 {
+    color: white;
+    font-size: 3.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+// ***** START OF LANDING *****
+
+// NavBar
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-left: 0;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.dropdown-menu,
+#dropdown-item-color {
+    background-color: $primary;
+}
+
+.navbar {
+    padding: 3em 0 4.5em;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.25rem;
+}
+
+// Title
+
+#title {
+    background-color: #ff4c68;
+}
+
+#landing__title-row {
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+
+#landing__dog {
+    transform: rotate(25deg);
+    width: 50%;
+}
+
+.btn-outline-secondary {
+    color: white;
+}
+
+#landing__download-btn {
+    margin: 1em 0.3em 0em 0em;
+}
+
+.fa-apple,
+.fa-google-play {
+    margin-right: 0.5em;
+}
+
+// ***** END OF LANDING *****
+
+// ***** START OF FEATURES *****
+
+#features__row {
+    padding: 10em 5%;
+
+}
+
+#features__easy,
+#features__elite,
+#features__guaranteed {
+    text-align: center;
+
+}
+
+.fa-check,
+.fa-bullseye,
+.fa-heart {
+    font-size: 2.5rem;
+    color: $secondary;
+    margin-bottom: 0.3em;
+}
+
+.fa-check:hover,
+.fa-bullseye:hover,
+.fa-heart:hover {
+    color: $primary;
+}
+
+
+@media (min-width: 500px) {
+
+    #features__easy,
+    #features__elite,
+    #features__guaranteed {
+        padding: 2.5em;
+    }
+
+}
+
+// ***** END OF FEATURES *****
+
+// ***** START OF TESTIMONIALS & PRESS *****
+
+#testimonials,
+#press {
+    background-color: $secondary;
+    padding: 5em;
+    text-align: center;
+    color: white;
+}
+
+#testimonials__container {
+    padding: 0 10em;
+}
+
+#testimonials {
+    .testimonials__img {
+        margin: 1em 0.5em 0em;
+        border-radius: 50%;
+        width: 10%;
+
+    }
+}
+
+#press {
+
+    .press__logo {
+        width: 20%;
+        padding-right: 2em;
+    }
+}
+
+// ***** END OF TESTIMONIALS & PRESS *****
