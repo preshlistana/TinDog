@@ -1,36 +1,34 @@
 // COLOR SETS
 
-$primary:#ff4c68;
-$secondary:#ef8172;
+$primary: #ff4c68;
+$secondary: #ef8172;
+$light-gray: #8f8f8f;
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    font-family: "Montserrat-Black";
-    font-weight: bolder;
-}
-
-h1 {
-    color: white;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
-h2 {
-    color: white;
-    font-size: 3.25rem;
-}
-
-h3 {
-    font-size: 1.5rem;
+  font-family: "Montserrat-Black";
+  font-weight: bolder;
 }
 
 p {
-    color: #8f8f8f;
+  color: $light-gray;
+}
+
+// SECTIONS
+
+.colored-section {
+  background-color: $primary;
+  color: white;
+}
+
+
+.white-section {
+  background-color: #fff;
 }
 
 // ***** START OF LANDING *****
@@ -38,134 +36,196 @@ p {
 // NavBar
 
 .navbar-brand {
-    font-family: "Ubuntu";
-    font-weight: bolder;
-    font-size: 3rem;
-    padding-left: 0;
+  font-family: "Ubuntu";
+  font-weight: bolder;
+  font-size: 3rem;
+  padding-left: 0;
 }
 
 .dropdown-menu {
-    border: none;
-}
-
-.dropdown-menu,
-#dropdown-item-color {
-    background-color: $primary;
+  border: none;
 }
 
 .navbar {
-    padding: 3em 0 4.5em;
+  padding: 3em 0 4.5em;
 }
 
 .nav-item {
-    padding: 0 18px;
+  padding: 0 18px;
 }
 
 .nav-link {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
+  background-color: $primary;
 }
 
 // Title
 
 #title {
-    background-color: #ff4c68;
+  padding-bottom: 5em;
 }
 
-#landing__title-row {
-    margin-top: 3em;
-    padding-bottom: 3em;
+.landing__title-row {
+  margin-top: 3em;
+  padding-bottom: 3em;
+}
+
+.landing__title {
+  font-size: 3.5rem;
+  line-height: 1.5;
 }
 
 #landing__dog {
-    transform: rotate(25deg);
-    width: 50%;
+  transform: rotate(25deg);
+  width: 50%;
+  position: absolute;
+  right: 30%;
 }
 
 .btn-outline-secondary {
-    color: white;
+  color: white;
 }
 
-#landing__download-btn {
-    margin: 1em 0.3em 0em 0em;
+.landing__download-btn {
+  margin: 1em 0.3em 0em 0em;
 }
 
 .fa-apple,
 .fa-google-play {
-    margin-right: 0.5em;
+  margin-right: 0.5em;
 }
 
 // ***** END OF LANDING *****
 
 // ***** START OF FEATURES *****
 
-#features__row {
-    padding: 10em 5%;
-
+#features {
+  position: relative;
 }
 
-#features__easy,
-#features__elite,
-#features__guaranteed {
-    text-align: center;
+.features__title {
+  font-size: 1.5rem;
+}
 
+.features__row {
+  padding: 10em 5%;
 }
 
 .fa-check,
 .fa-bullseye,
 .fa-heart {
-    font-size: 2.5rem;
-    color: $secondary;
-    margin-bottom: 0.3em;
+  font-size: 2.5rem;
+  color: $secondary;
+  margin-bottom: 0.3em;
 }
 
 .fa-check:hover,
 .fa-bullseye:hover,
 .fa-heart:hover {
-    color: $primary;
+  color: $primary;
 }
-
 
 @media (min-width: 500px) {
 
-    #features__easy,
-    #features__elite,
-    #features__guaranteed {
-        padding: 2.5em;
-    }
-
+  #features__easy,
+  #features__elite,
+  #features__guaranteed {
+    padding: 2.5em;
+  }
 }
 
 // ***** END OF FEATURES *****
 
 // ***** START OF TESTIMONIALS & PRESS *****
 
+.carousel-indicators {
+  margin-bottom: -5em;
+}
+
 #testimonials,
 #press {
-    background-color: $secondary;
-    padding: 5em;
-    text-align: center;
-    color: white;
+  background-color: $secondary;
+  padding: 5em;
+  text-align: center;
 }
 
-#testimonials__container {
-    padding: 0 10em;
+.carousel-item {
+  padding: 0 10em;
 }
 
-#testimonials {
-    .testimonials__img {
-        margin: 1em 0.5em 0em;
-        border-radius: 50%;
-        width: 10%;
+.testimonials__content {
+  font-size: 3.25rem;
+}
 
-    }
+.testimonials__img {
+  margin: 1em 0.5em 0em;
+  border-radius: 50%;
+  width: 10%;
 }
 
 #press {
-
-    .press__logo {
-        width: 20%;
-        padding-right: 2em;
-    }
+  .press__logo {
+    width: 20%;
+    padding-right: 2em;
+  }
 }
 
 // ***** END OF TESTIMONIALS & PRESS *****
+
+// ***** START OF PRICING *****
+#pricing {
+  text-align: center;
+  padding: 3em 2em;
+}
+
+.pricing__title {
+  font-size: 2.5rem;
+}
+
+.pricing__description {
+  font-size: 0.75rem;
+  color: $light-gray;
+}
+
+.pricing__row {
+  padding-top: 2.5em;
+}
+
+.pricing__column {
+  padding: 0 2em;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.pricing__cost {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: black;
+}
+
+// ***** END OF PRICING *****
+
+// ***** START OF CTA *****
+
+.cta-title {
+  font-size: 3rem;
+  padding-bottom: 1em;
+
+}
+
+// ***** END OF CTA *****
+#footer {
+  text-align: center;
+}
+
+.social-icons {
+  margin: 0em 1em;
+}
+
+// ***** START OF FOOTER *****
+
+
+// ***** END OF FOOTER *****

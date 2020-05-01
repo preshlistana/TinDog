@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -9,23 +9,17 @@ h3 {
   font-weight: bolder;
 }
 
-h1 {
-  color: white;
-  font-size: 3.5rem;
-  line-height: 1.5;
-}
-
-h2 {
-  color: white;
-  font-size: 3.25rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-
 p {
   color: #8f8f8f;
+}
+
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section {
+  background-color: #fff;
 }
 
 .navbar-brand {
@@ -39,11 +33,6 @@ p {
   border: none;
 }
 
-.dropdown-menu,
-#dropdown-item-color {
-  background-color: #ff4c68;
-}
-
 .navbar {
   padding: 3em 0 4.5em;
 }
@@ -54,28 +43,36 @@ p {
 
 .nav-link {
   font-size: 1.25rem;
-}
-
-#title {
   background-color: #ff4c68;
 }
 
-#landing__title-row {
+#title {
+  padding-bottom: 5em;
+}
+
+.landing__title-row {
   margin-top: 3em;
   padding-bottom: 3em;
+}
+
+.landing__title {
+  font-size: 3.5rem;
+  line-height: 1.5;
 }
 
 #landing__dog {
   -webkit-transform: rotate(25deg);
           transform: rotate(25deg);
   width: 50%;
+  position: absolute;
+  right: 30%;
 }
 
 .btn-outline-secondary {
   color: white;
 }
 
-#landing__download-btn {
+.landing__download-btn {
   margin: 1em 0.3em 0em 0em;
 }
 
@@ -84,14 +81,16 @@ p {
   margin-right: 0.5em;
 }
 
-#features__row {
-  padding: 10em 5%;
+#features {
+  position: relative;
 }
 
-#features__easy,
-#features__elite,
-#features__guaranteed {
-  text-align: center;
+.features__title {
+  font-size: 1.5rem;
+}
+
+.features__row {
+  padding: 10em 5%;
 }
 
 .fa-check,
@@ -116,19 +115,26 @@ p {
   }
 }
 
+.carousel-indicators {
+  margin-bottom: -5em;
+}
+
 #testimonials,
 #press {
   background-color: #ef8172;
   padding: 5em;
   text-align: center;
-  color: white;
 }
 
-#testimonials__container {
+.carousel-item {
   padding: 0 10em;
 }
 
-#testimonials .testimonials__img {
+.testimonials__content {
+  font-size: 3.25rem;
+}
+
+.testimonials__img {
   margin: 1em 0.5em 0em;
   border-radius: 50%;
   width: 10%;
@@ -137,5 +143,51 @@ p {
 #press .press__logo {
   width: 20%;
   padding-right: 2em;
+}
+
+#pricing {
+  text-align: center;
+  padding: 3em 2em;
+}
+
+.pricing__title {
+  font-size: 2.5rem;
+}
+
+.pricing__description {
+  font-size: 0.75rem;
+  color: #8f8f8f;
+}
+
+.pricing__row {
+  padding-top: 2.5em;
+}
+
+.pricing__column {
+  padding: 0 2em;
+}
+
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.pricing__cost {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: black;
+}
+
+.cta-title {
+  font-size: 3rem;
+  padding-bottom: 1em;
+}
+
+#footer {
+  text-align: center;
+}
+
+.social-icons {
+  margin: 0em 1em;
 }
 /*# sourceMappingURL=styles.css.map */
